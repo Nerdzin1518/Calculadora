@@ -155,7 +155,7 @@ while menu != 0 and menu <= 11:
         case 9:
             v1 = int(input("Digite um numero: "))
             v2 = 1
-            for i in v1:
+            while v1 >= 1:
                 v2 = v2 * v1
                 v1 = v1 - 1
             print(f"valor final: {v2:.3f}")
@@ -172,11 +172,10 @@ while menu != 0 and menu <= 11:
                              "10. Nominal;\n"))
         case 10:
             v1 = int(input("Digite um numero: "))
-            v1 = float(v1.replace(",", "."))
-            v2 = 1
-            for i in v1:
+            v2 = 0
+            while v1 >= 1:
                 v2 = v2 + v1
-                v1 -= v1
+                v1 = v1 - 1
             print(f"valor final: {v2:.3f}")
             menu = int(input("0. Sair;\n"
                              "1. Somar;\n"
