@@ -1,15 +1,15 @@
-menu = int(input("0. Sair;"
-                 "1. Somar;"
-                 "2. Subtrair;"
-                 "3. Multiplicar;"
-                 "4. Dividir;"
-                 "5. Potencia;"
-                 "6. Raiz quadrada inteira;"
-                 "7. MMC;"
-                 "8. MDC;"
-                 "9. Fatorial;"
-                 "10. Nominal;"))
-while menu != 0 or menu < 11:
+menu = int(input("0. Sair;\n"
+                 "1. Somar;\n"
+                 "2. Subtrair;\n"
+                 "3. Multiplicar;\n"
+                 "4. Dividir;\n"
+                 "5. Potencia;\n"
+                 "6. Raiz quadrada inteira;\n"
+                 "7. MMC;\n"
+                 "8. MDC;\n"
+                 "9. Fatorial;\n"
+                 "10. Nominal;\n"))
+while menu != 0 or menu <= 11:
     match menu:
         case 1:
             v1 = input("Digite um numero: ")
@@ -18,15 +18,186 @@ while menu != 0 or menu < 11:
             v2 = float(v2.replace(",", "."))
             v3 = v1 + v2
             print(f"valor final: {v3:.3f}")
-            menu = int(input("0. Sair;"
-                             "1. Somar;"
-                             "2. Subtrair;"
-                             "3. Multiplicar;"
-                             "4. Dividir;"
-                             "5. Potencia;"
-                             "6. Raiz quadrada inteira;"
-                             "7. MMC;"
-                             "8. MDC;"
-                             "9. Fatorial;"
-                             "10. Nominal;"))
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
             break
+        case 2:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 - v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 3:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 * v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 4:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 / v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 5:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 ** v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 6:
+            v1 = int(input("Digite um numero: "))
+            v2 = v1 ** 0.5
+            print(f"valor final: {v2:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 7:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 * v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 8:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = input("Digite outro numero: ")
+            v2 = float(v2.replace(",", "."))
+            v3 = v1 // v2
+            print(f"valor final: {v3:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 9:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = 1
+            for i in v1:
+                v2 = v2 * v1
+                v1 -= v1
+            print(f"valor final: {v2:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+        case 10:
+            v1 = input("Digite um numero: ")
+            v1 = float(v1.replace(",", "."))
+            v2 = 1
+            for i in v1:
+                v2 = v2 + v1
+                v1 -= v1
+            print(f"valor final: {v2:.3f}")
+            menu = int(input("0. Sair;\n"
+                             "1. Somar;\n"
+                             "2. Subtrair;\n"
+                             "3. Multiplicar;\n"
+                             "4. Dividir;\n"
+                             "5. Potencia;\n"
+                             "6. Raiz quadrada inteira;\n"
+                             "7. MMC;\n"
+                             "8. MDC;\n"
+                             "9. Fatorial;\n"
+                             "10. Nominal;\n"))
+            break
+    print("Obrigado por usar está calculadora!")
