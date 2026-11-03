@@ -9,7 +9,7 @@ menu = int(input("0. Sair;\n"
                  "8. MDC;\n"
                  "9. Fatorial;\n"
                  "10. Nominal;\n"))
-while menu != 0 or menu <= 11:
+while menu != 0 and menu <= 11:
     match menu:
         case 1:
             v1 = input("Digite um numero: ")
@@ -29,7 +29,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 2:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -48,7 +47,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 3:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -67,7 +65,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 4:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -86,7 +83,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 5:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -105,7 +101,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 6:
             v1 = int(input("Digite um numero: "))
             v2 = v1 ** 0.5
@@ -121,7 +116,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 7:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -140,7 +134,6 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 8:
             v1 = input("Digite um numero: ")
             v1 = float(v1.replace(",", "."))
@@ -159,14 +152,12 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 9:
-            v1 = input("Digite um numero: ")
-            v1 = float(v1.replace(",", "."))
+            v1 = int(input("Digite um numero: "))
             v2 = 1
             for i in v1:
                 v2 = v2 * v1
-                v1 -= v1
+                v1 = v1 - 1
             print(f"valor final: {v2:.3f}")
             menu = int(input("0. Sair;\n"
                              "1. Somar;\n"
@@ -179,9 +170,8 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
         case 10:
-            v1 = input("Digite um numero: ")
+            v1 = int(input("Digite um numero: "))
             v1 = float(v1.replace(",", "."))
             v2 = 1
             for i in v1:
@@ -199,5 +189,4 @@ while menu != 0 or menu <= 11:
                              "8. MDC;\n"
                              "9. Fatorial;\n"
                              "10. Nominal;\n"))
-            break
-    print("Obrigado por usar está calculadora!")
+print("Obrigado por usar está calculadora!")
